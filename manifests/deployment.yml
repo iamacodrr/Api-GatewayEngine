@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: apigatewayengine 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apigatewayengine
+  template:
+    metadata:
+      labels:
+        app: apigatewayengine 
+    spec:
+      containers:
+        - name: apigatewayengine 
+          image: registryzero1.azurecr.io/apigatewayengine
+          ports:
+          - containerPort: 80
