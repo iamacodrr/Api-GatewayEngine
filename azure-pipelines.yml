@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'registryzero11142d753-auth'
 
   # Agent VM image name
-  vmImageName: 'windows-latest'
+  vmImageName: 'ubuntu-latest'
 
 
 stages:
